@@ -2,7 +2,8 @@ import sbt._
 
 object Versions {
 
-  final val cats            = "2.1.3"
+  final val cats            = "2.1.1"
+  final val catsEffect      = "2.1.3"
   final val circe           = "0.13.0"
   final val datadog         = "0.49.0"
   final val fs2             = "2.1.1"
@@ -22,7 +23,7 @@ object Versions {
 
 object CompileTimeDependencies {
   final val cats                   = "org.typelevel"               %% "cats-core"                % Versions.cats
-  final val catsEffect             = "org.typelevel"               %% "cats-effect"              % Versions.cats
+  final val catsEffect             = "org.typelevel"               %% "cats-effect"              % Versions.catsEffect
   final val fs2Rabbit              = "dev.profunktor"              %% "fs2-rabbit"               % Versions.fs2
   final val http4s                 = "org.http4s"                  %% "http4s-core"              % Versions.http4s
   final val kindProjector          = "org.typelevel"               %% "kind-projector"           % Versions.kindProjector cross CrossVersion.full
